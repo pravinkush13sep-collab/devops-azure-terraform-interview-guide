@@ -1,0 +1,303 @@
+This repository contains 60 essential DevOps interview questions and answers for Azure + Terraform + DevOps fundamentals.
+
+Interview Questions & Answers
+
+1. Explain your role as a DevOps Engineer?
+
+Answer:
+As a DevOps Engineer, I automate infrastructure provisioning and deployment. In my hands-on project, I used Terraform to deploy Azure resources, ensuring scalability, consistency, and reliability.
+
+2. What are your key responsibilities?
+
+Answer:
+Provisioning infrastructure, writing reusable Terraform modules, automating deployments, validating resources, and ensuring security and availability.
+
+3. What tools have you used?
+
+Answer:
+Terraform for IaC, Microsoft Azure for cloud services, Git for version control, and basic CI/CD tools.
+
+4. How do you convert LLD into infrastructure?
+
+Answer:
+I analyze the LLD, identify required resources like VMs, networks, and storage, and translate them into Terraform configurations for deployment.
+
+5. What is your workflow?
+
+Answer:
+Requirement analysis → Terraform code → init → plan → apply → validation → monitoring.
+
+6. What is Terraform?
+
+Answer:
+Terraform is an Infrastructure as Code tool by HashiCorp used to provision and manage infrastructure using declarative configuration files with idempotent behavior.
+
+7. What are Terraform modules?
+
+Answer:
+Reusable blocks of Terraform code used to standardize and simplify infrastructure deployment.
+
+8. How do you make code reusable?
+
+Answer:
+Using variables, modules, and outputs to create flexible and reusable configurations.
+
+9. What is Terraform state?
+
+Answer:
+A file that tracks current infrastructure and maps resources to configuration.
+
+10. Where do you store state?
+
+Answer:
+In remote backends like Azure Storage for team collaboration and state locking.
+
+11. What is remote state?
+
+Answer:
+Shared storage of Terraform state that allows multiple users to work safely on the same infrastructure.
+
+12. Explain init, plan, apply
+
+Answer:
+Init initializes providers, plan previews changes, and apply executes deployment.
+
+13. What is terraform destroy?
+
+Answer:
+Used to delete all resources managed by Terraform.
+
+14. How does Terraform handle dependencies?
+
+Answer:
+It automatically creates a dependency graph using resource references.
+
+15. How do you handle errors?
+
+Answer:
+Check logs, identify issue, fix configuration, and re-run deployment.
+
+16. What is Azure?
+
+Answer:
+A cloud platform by Microsoft providing compute, storage, networking, and other services.
+
+17. Azure services you used?
+
+Answer:
+Virtual Machines, VNets, Subnets, NSGs, and Storage Accounts.
+
+18. What is VNet?
+
+Answer:
+A private network in Azure that enables secure communication.
+
+19. What is a subnet?
+
+Answer:
+A smaller network inside a VNet for resource organization and security.
+
+20. Public vs Private IP?
+
+Answer:
+Public IP is internet-facing, while private IP is used for internal communication.
+
+21. What is NSG?
+
+Answer:
+A Network Security Group controls inbound and outbound traffic using rules.
+
+22. How do you deploy a VM?
+
+Answer:
+Define VM configuration in Terraform and deploy using apply command.
+
+23. Factors before deploying resources?
+
+Answer:
+Cost, region, performance, security, and availability.
+
+24. How do you ensure cloud security?
+
+Answer:
+Using NSGs, RBAC, encryption, and Azure policies.
+
+25. What is scalability?
+
+Answer:
+Ability to increase or decrease resources based on demand.
+
+26. What is DevOps?
+
+Answer:
+A practice combining development and operations to automate workflows and improve collaboration.
+
+27. What is CI/CD?
+
+Answer:
+Continuous Integration and Deployment pipeline that automates build, test, and deployment.
+
+28. Why automation?
+
+Answer:
+To reduce manual effort, improve speed, and ensure consistency.
+
+29. What is IaC?
+
+Answer:
+Managing infrastructure using code instead of manual setup.
+
+30. Benefits of IaC?
+
+Answer:
+Consistency, repeatability, faster deployment, and reduced errors.
+
+31. What if apply fails?
+
+Answer:
+Check error logs, fix issue, and reapply.
+
+32. Wrong resource deployed?
+
+Answer:
+Update configuration and apply changes again.
+
+33. Multiple environments?
+
+Answer:
+Using variables, separate state files, or workspaces.
+
+34. Production down?
+
+Answer:
+Analyze logs, identify root cause, fix quickly, and restore service.
+
+35. How do you handle scaling?
+
+Answer:
+Using Azure scaling features or updating resource configurations.
+
+36. How do you validate infrastructure?
+
+Answer:
+By checking resources, connectivity, and application functionality.
+
+37. What after deployment?
+
+Answer:
+Monitor logs, verify services, and ensure everything is working.
+
+38. App not working?
+
+Answer:
+Check logs, configurations, networking, and dependencies.
+
+39. How do you ensure security?
+
+Answer:
+Using restricted access, encryption, and secure credentials.
+
+40. Sensitive data handling?
+
+Answer:
+Store secrets securely using services like Azure Key Vault.
+
+41. Team collaboration?
+
+Answer:
+Using Git, shared state, and proper communication.
+
+42. Conflict in team?
+
+Answer:
+Resolve logically through discussion and best practices.
+
+43. Terraform project example?
+
+Answer:
+In my hands-on project, I deployed Azure infrastructure using Terraform modules for scalability and reuse.
+
+44. How do you improve efficiency?
+
+Answer:
+By automating tasks and using reusable modules.
+
+45. Challenges faced?
+
+Answer:
+Handling Terraform errors and resolving state conflicts.
+
+46. Azure experience?
+
+Answer:
+Hands-on experience in deploying and managing Azure infrastructure.
+
+47. Scalability in design?
+
+Answer:
+Using modular and flexible architecture.
+
+48. Deployment failure?
+
+Answer:
+Analyze logs, fix issues, and redeploy.
+
+49. Reusable approach?
+
+Answer:
+Using Terraform modules and variables.
+
+50. Why should we hire you?
+
+Answer:
+I have strong knowledge of Terraform and Azure with hands-on experience in automating infrastructure.
+
+51. Variables and outputs?
+
+Answer:
+Variables are inputs; outputs expose useful values.
+
+52. State corrupt?
+
+Answer:
+Restore from backup or remote backend.
+
+53. What is taint?
+
+Answer:
+Marks a resource to be recreated.
+
+54. Lifecycle in Terraform?
+
+Answer:
+Used to control resource behavior like prevent_destroy.
+
+55. Resource group?
+
+Answer:
+A container for managing Azure resources.
+
+56. Region selection?
+
+Answer:
+Based on cost, latency, and availability.
+
+57. High availability?
+
+Answer:
+Deploying resources across multiple zones.
+
+58. Downtime handling?
+
+Answer:
+Using redundancy and planned deployments.
+
+59. Terraform vs ARM?
+
+Answer:
+Terraform is multi-cloud, modular, and more flexible than ARM.
+
+60. How do you start a new project?
+
+Answer:
+Understand requirements → design architecture → write Terraform → deploy → validate → monitor.
