@@ -1,0 +1,296 @@
+📘 Project Lifecycle (End-to-End Flow)
+
+🔹 1. Project Lifecycle
+Sales
+
+Client acquisition and deal closure
+(Client ko onboard karta hai aur deal close karta hai)
+
+Pre-Sales
+
+Requirement gathering and analysis
+(Client ko kya chahiye?)
+
+TPM (Technical Project Manager)
+
+Project planning, execution and coordination
+(Project ka timeline, planning aur coordination handle karta hai)
+
+Enterprise Architect
+
+Overall system design and technology decision
+(Pura system ka architecture design karta hai aur technology decide karta hai)
+
+🔹 2. Architecture Roles
+Infra Architect
+
+Designs infrastructure, networking and cloud setup
+(Network, cloud, servers aur security design karta hai)
+
+Application Architect
+
+Designs application structure and backend logic
+(App ka structure, APIs aur backend logic design karta hai)
+
+🔹 3. 3-Tier Architecture
+Frontend
+
+Handles user interface and client interaction
+(User ko jo dikhta hai — UI, buttons, pages)
+
+Backend
+
+Handles business logic and processing
+(Data process karta hai aur frontend ko response deta hai)
+
+Database
+
+Stores and manages application data
+(Data ko store karta hai aur retrieve karta hai)
+
+🔹 4. HLD vs LLD
+High Level Design (HLD)
+
+Defines overall architecture and system flow
+(Big picture — cloud/on-prem, components, architecture flow)
+
+Low Level Design (LLD)
+
+Defines detailed implementation and configuration
+(Exact IPs, ports, configs aur DB schema define hota hai)
+
+🔹 5. Deployment Models
+On-Premise
+
+Infrastructure hosted in own data center
+(Apna server aur data center hota hai)
+
+Cloud
+
+Infrastructure hosted on cloud platforms
+(Azure, AWS, GCP par deploy hota hai)
+
+🔹 6. Networking Fundamentals
+IP Address
+
+Unique identifier for each device in network
+(Har device ka ek unique address hota hai)
+
+Example: 192.168.1.10, 10.0.0.4
+
+Binary Nature of IP
+
+IP address is a 32-bit binary number
+(IP actually binary hota hai but human readable decimal me likhte hain)
+
+CIDR Notation
+
+Defines network size using prefix length
+(Network aur host part define karta hai)
+
+👉 Formula:
+
+Total IPs=2
+(32−n)
+
+Host Calculation
+
+Determines usable host addresses
+(Network me usable devices count karta hai)
+
+👉 Formula:
+
+Usable Hosts=2
+h
+−2
+
+Cloud Reserved IPs
+
+Cloud reserves first 4 and last 1 IP
+(Cloud me 5 IP hamesha reserve hote hain)
+
+Example: 10.0.1.0/24
+
+10.0.1.0 → Network
+10.0.1.1 → Gateway
+10.0.1.2 → DNS
+10.0.1.3 → Reserved
+10.0.1.255 → Broadcast
+Usable IP Formula
+
+Usable IPs=2
+(32−n)
+−5
+
+Subnet
+
+Divides network into smaller parts
+(Network ko chhote parts me todta hai)
+
+Virtual Network (VNet)
+
+Private isolated network in cloud
+(Cloud ke andar private network hota hai)
+
+Route Table
+
+Controls traffic routing path
+(Traffic kahan jayega define karta hai)
+
+🔹 7. Ghar / Building Analogy
+Network as building
+
+Entire system behaves like a building
+(Pura network ek building jaisa hota hai)
+
+Subnet as floors
+
+Each subnet is a separate floor
+(Har subnet ek floor hota hai)
+
+IP as rooms
+
+Each device has a unique room
+(Har device ek room jaisa hota hai)
+
+Gateway as main gate
+
+Entry and exit point
+(Building ka gate hota hai)
+
+Firewall as security guard
+
+Controls access to building
+(Security guard decide karta hai kaun andar aayega)
+
+Load balancer as lift
+
+Distributes users across floors
+(Lift logon ko alag floors me bhejta hai)
+
+Application gateway as reception
+
+Routes users to correct destination
+(Reception user ko sahi jagah bhejta hai)
+
+NAT as exit permission
+
+Allows internal users to access outside
+(Bahar jane ke liye permission deta hai)
+
+DNS as directory
+
+Maps names to locations
+(Building directory jaisa kaam karta hai)
+
+Router as CCTV
+
+Monitors all network activity
+(Router sab activity dekh raha hota hai)
+
+Reserved IPs as special rooms
+
+Used only by system
+(System ke liye reserved hote hain)
+
+🔹 8. Traffic Flow
+Full request flow
+
+User request travels through system layers
+(Request system ke multiple layers se pass hoti hai)
+
+User → DNS → Gateway → Load Balancer → Backend → Database
+
+🔹 9. Router Monitoring
+Router observes traffic
+
+Tracks IPs, domains and data flow
+(Router dekh sakta hai kaun kya access kar raha hai)
+
+HTTPS encrypts data
+
+Content cannot be read fully
+(Actual data hidden hota hai)
+
+DNS reveals domains
+
+Visited websites can be identified
+(Kaunsi site open hui pata chal jata hai)
+
+Public WiFi risk
+
+Network owner can monitor activity
+(Public WiFi me tracking possible hoti hai)
+
+🔹 10. Security
+Firewall
+
+Filters traffic based on rules
+(Traffic allow ya block karta hai)
+
+NSG
+
+Controls inbound and outbound traffic
+(Network rules define karta hai)
+
+🔹 11. NAT
+NAT converts private IP to public IP
+
+Enables internet access
+(Private system internet access kar sakta hai)
+
+🔹 12. Load Balancer
+Distributes traffic
+
+Prevents overload and improves performance
+(Server load manage karta hai)
+
+🔹 13. Application Gateway
+Smart routing
+
+Routes traffic based on URL and protocol
+(Intelligent routing karta hai)
+
+🔹 14. Ports
+Ports identify services
+
+Each service runs on a specific port
+(Har service ka port hota hai)
+
+Examples:
+80 → HTTP
+443 → HTTPS
+22 → SSH
+
+🔹 15. Scaling
+Vertical scaling
+
+Increase server power
+(Server strong banate hain)
+
+Horizontal scaling
+
+Increase number of servers
+(Server count badhate hain)
+
+🔹 16. Availability
+High availability
+
+System stays running during failure
+(System chalta rehta hai)
+
+Fault tolerance
+
+System auto-recovers
+(System automatically handle karta hai)
+
+🔹 17. Region & Zone
+Region
+
+Geographical location of data center
+(Location hota hai)
+
+Availability Zone
+
+Multiple isolated locations
+(Safe zones hote hain)
